@@ -7,40 +7,40 @@ public class TestConditionalStatements {
 	{
 		switch (intMonth) {
 		case 1:
-			System.out.println("It's January Month");
+			System.out.println("It's January Month with 31 days");
 			break;
 		case 2:
-			System.out.println("It's February Month");
+			System.out.println("It's February Month with 28 days");
 			break;
 		case 3:
-			System.out.println("It's March Month");
+			System.out.println("It's March Month with 31 days");
 			break;
 		case 4:
-			System.out.println("It's April Month");
+			System.out.println("It's April Month with 30 days");
 			break;
 		case 5:
-			System.out.println("It's May Month");
+			System.out.println("It's May Month with 31 datys");
 			break;
 		case 6:
-			System.out.println("It's June Month");
+			System.out.println("It's June Month with 30 datys");
 			break;
 		case 7:
-			System.out.println("It's July Month");
+			System.out.println("It's July Month with 31 datys");
 			break;
 		case 8:
-			System.out.println("It's August Month");
+			System.out.println("It's August Month with 31 datys");
 			break;			
 		case 9:
-			System.out.println("It's September Month");
+			System.out.println("It's September Month with 30 datys");
 			break;
 		case 10:
-			System.out.println("It's October Month");
+			System.out.println("It's October Month with 31 days");
 			break;
 		case 11:
-			System.out.println("It's November Month");
+			System.out.println("It's November Month with 30 days");
 			break;
 		case 12:
-			System.out.println("It's December Month");
+			System.out.println("It's December Month with 31 days");
 			break;			
 			
 		default:

@@ -23,7 +23,7 @@ public class TestDataTypes {
 		System.out.println("Total Salary : "+ intTotalSalary);
 	}
 	
-	//to get total salary with bonous
+	//to get total salary with bonous 
 	public void getTotalSalaryWithBonous()
 	{
 		int intTotalSalaryWithBonous = Integer.parseInt(strBonous) + intTotalSalary;
