@@ -1,7 +1,8 @@
 package com.vstjava.day1;
 
 public class TestConditionalStatements {
-
+	
+	//to get month name
 	public static void getMonth(int intMonth)
 	{
 		switch (intMonth) {
@@ -48,6 +49,7 @@ public class TestConditionalStatements {
 		}
 	}
 	
+	//to check the drinks
 	public static void CheckDrinks(String strDrinks)
 	{
 		if(strDrinks.toLowerCase().equals("tea"))

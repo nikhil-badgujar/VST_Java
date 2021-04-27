@@ -16,12 +16,14 @@ public class TestDataTypes {
 		intCount++;
 	}
 	
+	//to get total salary
 	public void getTotalSalary()
 	{
 		intTotalSalary = intBasic + intOther;
 		System.out.println("Total Salary : "+ intTotalSalary);
 	}
 	
+	//to get total salary with bonous
 	public void getTotalSalaryWithBonous()
 	{
 		int intTotalSalaryWithBonous = Integer.parseInt(strBonous) + intTotalSalary;
