@@ -1,6 +1,6 @@
 package com.vstjava.day1;
 
-public class TestSwitchCase {
+public class TestConditionalStatements {
 
 	public static void getMonth(int intMonth)
 	{
