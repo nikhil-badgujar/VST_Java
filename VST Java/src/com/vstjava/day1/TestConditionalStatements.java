@@ -50,7 +50,7 @@ public class TestConditionalStatements {
 	}
 	
 	//to check the drinks
-	public static void CheckDrinks(String strDrinks)
+	public static void checkDrinks(String strDrinks)
 	{
 		if(strDrinks.toLowerCase().equals("tea"))
 			System.out.println("You choose Tea!");
@@ -64,7 +64,7 @@ public class TestConditionalStatements {
 	
 	public static void main(String[] args) {
 		getMonth(01);
-		CheckDrinks("Tea");
+		checkDrinks("Tea");
 	}
 
 }

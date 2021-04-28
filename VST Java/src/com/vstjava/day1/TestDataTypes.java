@@ -37,5 +37,4 @@ public class TestDataTypes {
 		TestDataTypes objTestDataTypes1 = new TestDataTypes();
 		System.out.println("Total Objects Created : "+ intCount);
 	}
-
 }
