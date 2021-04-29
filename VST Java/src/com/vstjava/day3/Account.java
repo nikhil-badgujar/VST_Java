@@ -10,6 +10,11 @@ public class Account extends AccountTypes {
 		// TODO Auto-generated constructor stub
 	}
 	
+	@Override
+	public void closeAccount() { 
+		System.out.println("Closing acc from Sub class");
+	}
+	
 	public void savingAccountWithdraw(double doubleWithdrawAmount) {
 		
 		if(doubleBalance - doubleWithdrawAmount < 1000)

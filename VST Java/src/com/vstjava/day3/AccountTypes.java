@@ -27,6 +27,10 @@ public abstract class AccountTypes {
 		return df.format(doubleAmount);
 	}
 	
+	public void closeAccount() {
+		System.out.println("Closing acc from Abstract Class");	
+	}
+	
 	abstract void savingAccountWithdraw(double doubleWithdrawAmount);
 	abstract void currentAccountWithdraw(double doubleWithdrawAmount);
 

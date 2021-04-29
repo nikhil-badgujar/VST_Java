@@ -10,7 +10,7 @@ public class BankAccount {
 		objAccount.getInterest();
 		objAccount.savingAccountWithdraw(5000);
 		objAccount.currentAccountWithdraw(15000);
-
+		
+		objAccount.closeAccount();
 	}
-
 }
