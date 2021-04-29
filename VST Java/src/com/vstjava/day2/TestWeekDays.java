@@ -2,14 +2,12 @@ package com.vstjava.day2;
 
 import java.util.Scanner;
 
-public class TestWeekDays {
-	
-	
+public class TestWeekDays {	
 	
 	public void checkString()
 	{
 		String []strArr = {"mon","tue","wed","thu","fri","sat","sun"};
-		System.out.print("Actual Day : ");
+		System.out.print("Select Actual Day : ");
 		Scanner sc = new Scanner(System.in);
 		String strInput = sc.next().toLowerCase();
 				
