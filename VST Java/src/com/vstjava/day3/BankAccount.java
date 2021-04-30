@@ -8,7 +8,7 @@ public class BankAccount {
 		Account objAccount = new Account(1000);
 		objAccount.deposit(9000);
 		objAccount.getInterest();
-		objAccount.savingAccountWithdraw(5000);
+		objAccount.savingAccountWithdraw(100);
 		objAccount.currentAccountWithdraw(15000);
 		
 		objAccount.closeAccount();

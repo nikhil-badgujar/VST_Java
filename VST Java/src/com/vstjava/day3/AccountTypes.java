@@ -17,7 +17,9 @@ public abstract class AccountTypes {
 	}
 	
 	public void getInterest() {
-		this.doubleBalance *= floatInterest/100;
+		double intInterestAmount = doubleBalance;
+		intInterestAmount *= floatInterest/100;
+		this.doubleBalance += intInterestAmount;
 		System.out.println("Interest Amount : "+ getBalance(this.doubleBalance));
 	}
 	
