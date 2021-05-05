@@ -1,49 +1,64 @@
 package com.vstjava.day6;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class Utilities {
+		
+	private static final String strAllCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+			+ "qwertyuiopasdfghjklzxcvbnm";
 	
 	Random random = new Random();
 	
 	StringBuilder sb = new StringBuilder();
 	
-	public String generateFirstNameSurname()	{
-		int intLeftLimit=97;
-		int intRightLimit=122;
-		int intTargetLength=10;
+	/***
+	 * to generate Random String
+	 * @param count
+	 * @return
+	*/
+	public String getRandomString(int intCount) {
+		StringBuilder sb = new StringBuilder();
+		while (intCount-- != 0) {
+				int intCharacter = (int)(Math.random()*strAllCharacters.length());
+				sb.append(strAllCharacters.charAt(intCharacter));
+		}
+	return sb.toString();
+	} 	
 	
-		String strFirstNameSurname = (random.ints(intLeftLimit,intRightLimit+1))
-				.limit(intTargetLength)
-				.collect(StringBuilder::new, 
-						 StringBuilder::appendCodePoint, 
-						 StringBuilder::append)
-				.toString();
-		return strFirstNameSurname;
+	/***
+	 * to generate Email ID
+	 * @return
+	 */
+	public String getRandomEmailId() {
+		// TODO Auto-generated method stub
+		return getRandomString(5) + getRandomNumber(0, 9) + "@gmail.com";
 	}
 	
-	public int generateBirthDate() {
-		int intBirthdate = (int)(Math.random()*31);		
-		return intBirthdate;		
+	/***
+	 * to generate random number in given range
+	 * @param intFrom
+	 * @param intTo
+	 * @return
+	 */
+	public int getRandomNumber(int intFrom, int intTo) {		
+		int intRandomNumber;
+		do {
+			intRandomNumber= (int)(Math.random()*(intTo - intFrom))
+						+ intFrom;
+		}while(intRandomNumber == 0);
+		return intRandomNumber;
 	}
 	
-	public int generateBirthMonth() {
-		int intBirthMonth = (int)(Math.random()*12);
-		return intBirthMonth;
-	}
-	
-	public int generateBirthYear() {
-		int intFrom = 1920;
-		int intTo = 2021;
-		
-		int intBirthYear = (int)(Math.random()*(intTo - intFrom))
-								+ intFrom;
-		return intBirthYear;
-	}
-	
-	public long generateMobileNumber(){
-		long longPhoneNumber= (long)(Math.random()*Math.pow(10, 10));
-		return longPhoneNumber;
+	/***
+	 * to generate Mobile Number
+	 * @return
+	 */
+	public String getMobileNumber(){
+		int intNum = random.nextInt(1000000000);
+		DecimalFormat df = new DecimalFormat("000000000"); //remaining 9 digits
+		String strPhoneNumber = getRandomNumber(7,9) + df.format(intNum);
+		return strPhoneNumber;
 	}
 	
 }

@@ -1,14 +1,19 @@
 package com.vstjava.day6;
 
+import java.text.DecimalFormat;
+import java.util.Random;
+
 public class TestFacebook {
 
 	public static void main(String[] args) {
 		
+				
 		VerifyMethods objVerifyMethods = new VerifyMethods();
 		
 		FacebookPage objFacebookPage = new FacebookPage();
 		
 		Utilities objUtilities = new Utilities();
+		
 		
 		System.out.println("\n<--------------------Testing with Browser & URL-------------------->\n");
 		
@@ -18,26 +23,73 @@ public class TestFacebook {
 		
 		objVerifyMethods.verifyWithoutUrl("Safari");
 		
-		System.out.println("\n<--------------------Creating New Account-------------------->\n");
+		System.out.println("\n<--------------------Creating New Account with Mobile Number -------------------->\n");
 		
-		objFacebookPage.createNewAccount(objUtilities.generateFirstNameSurname(),
-				objUtilities.generateFirstNameSurname(),
-				objUtilities.generateBirthDate(),
-				objUtilities.generateBirthMonth(),
-				objUtilities.generateBirthYear(), 
-				objUtilities.generateMobileNumber(),
+		objFacebookPage.createNewAccountWithMobileNumber(objUtilities.getRandomString(4),
+				objUtilities.getRandomString(7),
+				objUtilities.getRandomNumber(1,31),
+				objUtilities.getRandomNumber(1,12),
+				objUtilities.getRandomNumber(1920, 2020), 
+				objUtilities.getMobileNumber(),
 				"Male",
 				"******");
 		
-		System.out.println("\n<--------------------Verifying details with or w/o Password-------------------->\n");
+				
+		System.out.println("\n<--------------------Creating New Account with Email Id-------------------->\n");
 		
-		objVerifyMethods.verifySignUpButton(objUtilities.generateFirstNameSurname(),
-				objUtilities.generateFirstNameSurname(),
-				(long)objUtilities.generateMobileNumber(),
-				(int)objUtilities.generateBirthDate(),
-				(int)objUtilities.generateBirthMonth(),
-				(int)objUtilities.generateBirthYear(),				
+		objFacebookPage.createNewAccountWithEmailId(objUtilities.getRandomString(5),
+				objUtilities.getRandomString(7),
+				objUtilities.getRandomNumber(1,31),
+				objUtilities.getRandomNumber(1,12),
+				objUtilities.getRandomNumber(1920, 2020), 
+				objUtilities.getRandomEmailId(),
+				"Male",
+				"******");
+		
+		
+		System.out.println("\n<--------------------Verifying details with Mobile Number & Password-------------------->\n");
+		
+		objVerifyMethods.verifySignUpButtonWithMobileNumber(objUtilities.getRandomString(5),
+				objUtilities.getRandomString(8),
+				objUtilities.getMobileNumber(),
+				objUtilities.getRandomNumber(1,31),
+				objUtilities.getRandomNumber(1,12),
+				objUtilities.getRandomNumber(1920, 2020), 			
+				"Male",
+				"******");
+		
+		
+		System.out.println("\n<--------------------Verifying details with Email ID & Password-------------------->\n");
+		
+		objVerifyMethods.verifySignUpButtonWithEmail(objUtilities.getRandomString(5),
+				objUtilities.getRandomString(8),
+				objUtilities.getRandomEmailId(),
+				objUtilities.getRandomNumber(1,31),
+				objUtilities.getRandomNumber(1,12),
+				objUtilities.getRandomNumber(1920, 2020), 			
+				"Male",
+				"******");	
+		
+		
+		System.out.println("\n<--------------------Verifying details with Mobile, W/o Password-------------------->\n");
+		
+		objVerifyMethods.verifySignUpButtonWithMobileNumberWithoutPassword(objUtilities.getRandomString(5),
+				objUtilities.getRandomString(8),
+				objUtilities.getMobileNumber(),
+				objUtilities.getRandomNumber(1,31),
+				objUtilities.getRandomNumber(1,12),
+				objUtilities.getRandomNumber(1920, 2020), 				
 				"Male");	
 		
+		
+		System.out.println("\n<--------------------Verifying details with Email Id, W/o Password-------------------->\n");
+		
+		objVerifyMethods.verifySignUpButtonWithEmailIdWithoutPassword(objUtilities.getRandomString(5),
+				objUtilities.getRandomString(8),
+				objUtilities.getRandomEmailId(),
+				objUtilities.getRandomNumber(1,31),
+				objUtilities.getRandomNumber(1,12),
+				objUtilities.getRandomNumber(1920, 2020), 				
+				"Male");
 	}
 }
