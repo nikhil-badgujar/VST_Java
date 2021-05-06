@@ -55,7 +55,7 @@ public class FacebookPage {
 	 * @param strGender
 	 * @param strPassword
 	 */
-	public void createNewAccountWithMobileNumber(String strFirstName,String strSurname,
+	public void signUpAccountWithMobileNumber(String strFirstName,String strSurname,
 			int intBirthDate,int intBirthMonth,int intBirthYear,
 			String longPhoneNumber,String strGender,String strPassword){   	 
    	 this.setStrFirstName(strFirstName);
@@ -82,7 +82,7 @@ public class FacebookPage {
 	 * @param strGender
 	 * @param strPassword
 	 */
-	public void createNewAccountWithEmailId(String strFirstName,String strSurname,
+	public void signUpAccountWithEmailId(String strFirstName,String strSurname,
 			int intBirthDate,int intBirthMonth,int intBirthYear,
 			String strEmail,String strGender,String strPassword){   	 
    	 this.setStrFirstName(strFirstName);

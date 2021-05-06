@@ -25,7 +25,7 @@ public class TestFacebook {
 		
 		System.out.println("\n<--------------------Creating New Account with Mobile Number -------------------->\n");
 		
-		objFacebookPage.createNewAccountWithMobileNumber(objUtilities.getRandomString(4),
+		objFacebookPage.signUpAccountWithMobileNumber(objUtilities.getRandomString(4),
 				objUtilities.getRandomString(7),
 				objUtilities.getRandomNumber(1,31),
 				objUtilities.getRandomNumber(1,12),
@@ -37,7 +37,7 @@ public class TestFacebook {
 				
 		System.out.println("\n<--------------------Creating New Account with Email Id-------------------->\n");
 		
-		objFacebookPage.createNewAccountWithEmailId(objUtilities.getRandomString(5),
+		objFacebookPage.signUpAccountWithEmailId(objUtilities.getRandomString(5),
 				objUtilities.getRandomString(7),
 				objUtilities.getRandomNumber(1,31),
 				objUtilities.getRandomNumber(1,12),
