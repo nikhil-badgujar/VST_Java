@@ -41,13 +41,13 @@ public class Utilities {
 	 * @param intTo
 	 * @return
 	 */
-	public int getRandomNumber(int intFrom, int intTo) {		
+	public String getRandomNumber(int intFrom, int intTo) {		
 		int intRandomNumber;
 		do {
 			intRandomNumber= (int)(Math.random()*(intTo - intFrom))
 						+ intFrom;
 		}while(intRandomNumber == 0);
-		return intRandomNumber;
+		return Integer.toString(intRandomNumber);
 	}
 	
 	/***

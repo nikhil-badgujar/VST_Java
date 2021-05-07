@@ -10,15 +10,15 @@ public class FacebookPage {
 		System.out.println("Surname : " + strSurname);
 	}
 	
-	public void setIntBirthDate(int intBirthDate) {
+	public void setIntBirthDate(String intBirthDate) {
 		System.out.println("Birth Date : "+ intBirthDate);
 	}
 	
-	public void setIntBirthMonth(int intBirthMonth) {
+	public void setIntBirthMonth(String intBirthMonth) {
 		System.out.println("Birth Month : "+ intBirthMonth);
 	}
 	
-	public void setIntBirthYear(int intBirthYear) {
+	public void setIntBirthYear(String intBirthYear) {
 		System.out.println("Birth Year : "+ intBirthYear);
 	}
 	
@@ -48,21 +48,21 @@ public class FacebookPage {
 	 * Create New Account with Mobile Number
 	 * @param strFirstName
 	 * @param strSurname
-	 * @param intBirthDate
-	 * @param intBirthMonth
-	 * @param intBirthYear
+	 * @param string
+	 * @param string2
+	 * @param string3
 	 * @param longPhoneNumber
 	 * @param strGender
 	 * @param strPassword
 	 */
 	public void signUpAccountWithMobileNumber(String strFirstName,String strSurname,
-			int intBirthDate,int intBirthMonth,int intBirthYear,
+			String strBirthDate,String strBirthMonth,String strBirthYear,
 			String longPhoneNumber,String strGender,String strPassword){   	 
    	 this.setStrFirstName(strFirstName);
    	 this.setStrSurname(strSurname);
-   	 this.setIntBirthDate(intBirthDate);
-   	 this.setIntBirthMonth(intBirthMonth);
-   	 this.setIntBirthYear(intBirthYear);
+   	 this.setIntBirthDate(strBirthDate);
+   	 this.setIntBirthMonth(strBirthMonth);
+   	 this.setIntBirthYear(strBirthYear);
    	 this.setLongMobileNumber(longPhoneNumber);
    	 this.setStrGender(strGender);
    	 this.setStrPassword(strPassword);
@@ -75,21 +75,21 @@ public class FacebookPage {
 	 * Create new Account with Email id
 	 * @param strFirstName
 	 * @param strSurname
-	 * @param intBirthDate
-	 * @param intBirthMonth
-	 * @param intBirthYear
+	 * @param string
+	 * @param string2
+	 * @param string3
 	 * @param strEmail
 	 * @param strGender
 	 * @param strPassword
 	 */
 	public void signUpAccountWithEmailId(String strFirstName,String strSurname,
-			int intBirthDate,int intBirthMonth,int intBirthYear,
+			String strBirthDate,String strBirthMonth,String strBirthYear,
 			String strEmail,String strGender,String strPassword){   	 
    	 this.setStrFirstName(strFirstName);
    	 this.setStrSurname(strSurname);
-   	 this.setIntBirthDate(intBirthDate);
-   	 this.setIntBirthMonth(intBirthMonth);
-   	 this.setIntBirthYear(intBirthYear);
+   	 this.setIntBirthDate(strBirthDate);
+   	 this.setIntBirthMonth(strBirthMonth);
+   	 this.setIntBirthYear(strBirthYear);
    	 this.setEmailId(strEmail);
    	 this.setStrGender(strGender);
    	 this.setStrPassword(strPassword);

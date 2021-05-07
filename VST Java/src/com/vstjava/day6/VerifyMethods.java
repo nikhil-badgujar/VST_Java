@@ -40,21 +40,21 @@ public class VerifyMethods extends FacebookPage {
 	 * @param strSurname
 	 * @param longMobileNumber
 	 * @param strPassword
-	 * @param intBirthDate
-	 * @param intBirthMonth
-	 * @param intBirthYear
+	 * @param string
+	 * @param string2
+	 * @param string3
 	 * @param strGender
 	 */
 	public void verifySignUpButtonWithMobileNumber(String strFirstName, String strSurname, 
-			String longMobileNumber, int intBirthDate, int intBirthMonth, 
-			int intBirthYear, String strGender, String strPassword) {
+			String longMobileNumber, String string, String string2, 
+			String string3, String strGender, String strPassword) {
 		this.setStrFirstName(strFirstName);
 		this.setStrSurname(strSurname);
 		this.setLongMobileNumber(longMobileNumber);
 		this.setStrPassword(strPassword);
-		this.setIntBirthDate(intBirthDate);
-		this.setIntBirthMonth(intBirthMonth);
-		this.setIntBirthYear(intBirthYear);
+		this.setIntBirthDate(string);
+		this.setIntBirthMonth(string2);
+		this.setIntBirthYear(string3);
 		this.setStrGender(strGender);
 		
 		System.out.println("All details in SignUp are Verified!");		
@@ -66,20 +66,20 @@ public class VerifyMethods extends FacebookPage {
 	 * @param strSurname
 	 * @param strEmail
 	 * @param strPassword
-	 * @param intBirthDate
-	 * @param intBirthMonth
-	 * @param intBirthYear
+	 * @param string
+	 * @param string2
+	 * @param string3
 	 * @param strGender
 	 */
 	public void verifySignUpButtonWithEmail(String strFirstName, String strSurname, 
-			String strEmail, int intBirthDate, int intBirthMonth, 
-			int intBirthYear, String strGender, String strPassword) {
+			String strEmail, String string, String string2, 
+			String string3, String strGender, String strPassword) {
 		this.setStrFirstName(strFirstName);
 		this.setStrSurname(strSurname);
 		this.setEmailId(strEmail);		
-		this.setIntBirthDate(intBirthDate);
-		this.setIntBirthMonth(intBirthMonth);
-		this.setIntBirthYear(intBirthYear);
+		this.setIntBirthDate(string);
+		this.setIntBirthMonth(string2);
+		this.setIntBirthYear(string3);
 		this.setStrGender(strGender);
 		this.setStrPassword(strPassword);
 		
@@ -92,20 +92,20 @@ public class VerifyMethods extends FacebookPage {
 	 * @param strFirstName
 	 * @param strSurname
 	 * @param longMobileNumber
-	 * @param intBirthDate
-	 * @param intBirthMonth
-	 * @param intBirthYear
+	 * @param string
+	 * @param string2
+	 * @param string3
 	 * @param strGender
 	 */
 	public void verifySignUpButtonWithMobileNumberWithoutPassword(String strFirstName, String strSurname, 
-			String longMobileNumber, int intBirthDate,
-			int intBirthMonth, int intBirthYear, String strGender) {
+			String longMobileNumber, String string,
+			String string2, String string3, String strGender) {
 		this.setStrFirstName(strFirstName);
 		this.setStrSurname(strSurname);
 		this.setLongMobileNumber(longMobileNumber);
-		this.setIntBirthDate(intBirthDate);
-		this.setIntBirthMonth(intBirthMonth);
-		this.setIntBirthYear(intBirthYear);
+		this.setIntBirthDate(string);
+		this.setIntBirthMonth(string2);
+		this.setIntBirthYear(string3);
 		this.setStrGender(strGender);
 		
 		System.out.println("Fail to create Account with Mobile Number! \n"
@@ -117,20 +117,20 @@ public class VerifyMethods extends FacebookPage {
 	 * @param strFirstName
 	 * @param strSurname
 	 * @param longMobileNumber
-	 * @param intBirthDate
-	 * @param intBirthMonth
-	 * @param intBirthYear
+	 * @param string
+	 * @param string2
+	 * @param string3
 	 * @param strGender
 	 */
 	public void verifySignUpButtonWithEmailIdWithoutPassword(String strFirstName, String strSurname, 
-			String strEmail, int intBirthDate,
-			int intBirthMonth, int intBirthYear, String strGender) {
+			String strEmail, String string,
+			String string2, String string3, String strGender) {
 		this.setStrFirstName(strFirstName);
 		this.setStrSurname(strSurname);
 		this.setEmailId(strEmail);
-		this.setIntBirthDate(intBirthDate);
-		this.setIntBirthMonth(intBirthMonth);
-		this.setIntBirthYear(intBirthYear);
+		this.setIntBirthDate(string);
+		this.setIntBirthMonth(string2);
+		this.setIntBirthYear(string3);
 		this.setStrGender(strGender);
 		
 		System.out.println("Fail to create Account with Email Id! \n"
